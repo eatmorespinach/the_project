@@ -1,4 +1,45 @@
-%h1 Landing/index
-%p Hey worldddd. this is the index.html.haml file, located within LANDING under VIEWS.
+%html
+  %head
+    %link{:href => "css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "css/index.css", :rel => "stylesheet"}/
+    %script{:src => "https://static.vline.com/vline.js"}
+    %title collab bnb
+  %body
+    / header
+    #header
+      #inner-header
+        .nav-a
+          %ul
+            %li
+              %a{:href => "http://google.com"} login
+            %li
+              %a{:href => "http://drewsing.com"} about
+            %li
+              %a{:href => "http://timferriss.com"} faq
+    / main landing page body
+    #container
+      #hero
+        %button.btn-large Sign Up
+        %img#heropic{:alt => "hero image", :src => "http://latimesphoto.files.wordpress.com/2011/11/la-me-wwoofing08.jpg"}/
+      #content
+        %ul#images
+        %h1 
+          This is a header 1
+        %h2 
+          This is a header 2
+        %h3
+          This is a header 3
 
-%p browser goes to > Controller which then renders the  > view
+     
+      %br/
+      %br/
+      / practice input text form
+      %form
+        Email
+        %input{:name => "email", :type => "text", :value => "type your shit here"}/
+        Password
+        %input{:name => "password", :type => "text", :value => "type your shit here"}/
+      %button#form-enter Enter
+      #output
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
+    %script{:src => "javascripts/index.js"}
