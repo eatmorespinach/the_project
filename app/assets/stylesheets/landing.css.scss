@@ -1,0 +1,89 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	font-family: helvetica;
+}
+
+#header {
+	background-color: gray;
+	height: 50px;
+}
+
+#inner-header {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.nav-a li {
+	float: right;
+	margin-top: 15px;
+	padding-right:10px;	
+}
+
+.nav-a li a:visited { 
+	color: white; 
+	text-decoration: none;
+}
+
+.nav-a li a:link {
+	text-decoration: none;	
+}
+
+.nav-a li a:hover {
+	text-decoration: underline;	
+}
+
+#container {
+	background-color: yellow;
+	height: 1000px;
+	width: 960px;
+	margin: 0px auto;	
+}
+
+#hero {
+	position: relative;
+}
+
+#heropic {
+	width: 960px;
+	height: 665px;
+}
+
+#hero button {
+	position: absolute;
+	background-color: red;
+	height: 100px;
+	width: 270px;
+	margin-left: 600px;
+	margin-top: 450px;
+
+}
+
+#images li {
+  display: inline-block;
+  margin: 10px;
+}
+#images li img {
+  -webkit-transition: 1s all ease-in-out;
+  opacity: 0;
+  height: 80px;
+}
+
+#images li img:hover {
+  -webkit-transform: scale(1.5) rotate(10deg);
+}
+
+#images li.show img {
+  opacity: 1;
+}
+
+
+#cube {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff6600;
+}
