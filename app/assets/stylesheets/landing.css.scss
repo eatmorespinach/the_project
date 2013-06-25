@@ -61,10 +61,19 @@ body {
 	height: 665px;
 }
 
+#tagline {
+	position: absolute;
+	color: $default_text;
+	margin-left:80px;
+	margin-top: 400px;
+	line-height: 110%;
+	background: white;
+}
+
 #hero button {
 	position: absolute;
-	margin-left: 600px;
-	margin-top: 450px;
+	margin-left: 650px;
+	margin-top: 600px;
 
 }
 
@@ -87,10 +96,3 @@ body {
   opacity: 1;
 }
 
-
-#cube {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #ff6600;
-}

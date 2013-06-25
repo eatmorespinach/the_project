@@ -5,7 +5,7 @@
     %script{:src => "https://static.vline.com/vline.js"}
     %title collab bnb
   %body
-    / header
+
     #header
       #inner-header
         .nav-a
@@ -13,18 +13,16 @@
             %li
               %a{:href => "http://google.com"} login
             %li
-              %a{:href => "http://drewsing.com"} about
-            %li
-              %a{:href => "http://timferriss.com"} faq
+              = link_to 'about', {:controller=> 'content', :action=> 'about'}
+  
     / main landing page body
     #container
       #hero
+        %h1#tagline Volunteer. <br><br> And in return, recieve complimentary food <br>and lodging from your host.
         %button.btn-large Sign Up
         %img#heropic{:alt => "hero image", :src => "http://latimesphoto.files.wordpress.com/2011/11/la-me-wwoofing08.jpg"}/
       #content
         %ul#images
-        %h1 
-          This is a header 1
         %h2 
           This is a header 2
         %h3
