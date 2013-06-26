@@ -6,16 +6,33 @@
     %title collab bnb
   %body
 
-    #header
-      #inner-header
-        #top-left-logo 
-          %h3 Bitmaker Project
-        .nav-a
-          %ul
-            %li
-              %a{:href => "http://google.com"} login
-            %li
-              = link_to 'about', {:controller=> 'content', :action=> 'about'}
+    .navbar.navbar-inverse
+      .navbar-inner
+        .container
+          / .btn-navbar is used as the toggle for collapsed navbar content
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          / Be sure to leave the brand out there if you want it shown
+          %a.brand{:href => "#"} Project name
+          / Everything you want hidden at 940px or less, place within here
+          .nav-collapse.collapse
+            / .nav, .navbar-search, .navbar-form, etc
+
+
+
+
+    / #header
+    /   #inner-header
+    /     #top-left-logo 
+    /       %h3 Bitmaker Project
+    /     .nav-a
+    /       %ul
+    /         %li
+    /           %a{:href => "http://google.com"} login
+    /         %li
+    /           = link_to 'about', {:controller=> 'content', :action=> 'about'}
   
     / main landing page body
     #container

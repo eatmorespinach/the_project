@@ -11,39 +11,42 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 $default_text: #333333;
 
-body {
-}
 
-#header {
-	background-color: yellow;
-	height: 50px;
-	margin-top:-10px;
-}
 
-#inner-header {
-	width: 960px;
-	margin: 0px auto;
-}
 
-.nav-a li {
-	float: right;
-	margin-top: 15px;
-	padding-right:10px;	
-}
 
-.nav-a li a:visited { 
-	color: $default_text; 
-	text-decoration: none;
-}
 
-.nav-a li a:link {
-	text-decoration: none;
-	color: #333333;	
-}
 
-.nav-a li a:hover {
-	text-decoration: underline;	
-}
+//#header {
+//	background-color: yellow;
+//	height: 50px;
+//	margin-top:-10px;
+//}
+
+//#inner-header {
+//	width: 960px;
+//	margin: 0px auto;
+//}
+
+//.nav-a li {
+//	float: right;
+//	margin-top: 15px;
+//	padding-right:10px;	
+//}
+
+//.nav-a li a:visited { 
+//	color: $default_text; 
+//	text-decoration: none;
+//}
+
+//.nav-a li a:link {
+//	text-decoration: none;
+//	color: #333333;	
+//}
+
+//.nav-a li a:hover {
+//	text-decoration: underline;	
+//}
 
 #container {
 	background-color: white;
