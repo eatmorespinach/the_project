@@ -2,3 +2,6 @@ Use this README file to introduce your application and point to useful places in
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
 
 The Project Notes: Mainly having to do with where I'm at with things. 
+
+
+I have installed rspec for tdd. 

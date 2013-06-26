@@ -1,5 +1,7 @@
 TheProject::Application.routes.draw do
   
+  resources :users
+
   get "content/about"
 
   root :to => "landing#index"
