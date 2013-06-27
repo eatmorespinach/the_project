@@ -17,95 +17,14 @@
 
 $default_text: #333333;
 
-#header {
-	background-color: yellow;
-	height: 50px;
-	margin-top:-10px;
-}
-
-#inner-header {
-	width: 940px;
-	margin: 0 auto;
-}
-
 #container {
 	background-color: white;
 	height: 1000px;
-	width: 940px;
+	width: 960px;
 	margin: 0px auto;	
 }
 
-#top-left-logo {
-	float: left;
-	position: absolute;
-}
 
-.nav-a li {
-	float: right;
-	margin-top: 15px;
-	padding-right:10px;	
-}
-
-.nav-a li a:visited { 
-	color: $default_text; 
-	text-decoration: none;
-}
-
-.nav-a li a:link {
-	text-decoration: none;
-	color: #333333;	
-}
-
-.nav-a li a:hover {
-	text-decoration: underline;	
-}
-
-#hero {
-	position: relative;
-}
-
-#heropic {
-	width: 940px;
-	height: 655px;
-}
-
-#tagline {
-	position: absolute;
-	color: $default_text;
-	margin-left:80px;
-	margin-top: 400px;
-	line-height: 110%;
-	background: white;
-}
-
-#hero button {
-	position: absolute;
-	margin-left: 650px;
-	margin-top: 600px;
-
-}
-
-.taglines {
-	text-align: center;
-}
-
-#images li {
-  display: inline-block;
-  margin: 10px;
-}
-#images li img {
-  -webkit-transition: 1s all ease-in-out;
-  opacity: 0;
-  height: 80px;
-}
-
-#images li img:hover {
-  -webkit-transform: scale(1.5) rotate(10deg);
-}
-
-#images li.show img {
-  opacity: 1;
-}
 
 
 

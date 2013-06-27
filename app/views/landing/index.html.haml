@@ -14,11 +14,14 @@
             %span.icon-bar
             %span.icon-bar
           / Be sure to leave the brand out there if you want it shown
-          %a.brand{:href => "#"} Project name
-          %li{:href => "#"} Bob joe Smooth
+          %a.brand{:href => "#"} Bitmaker Project
+          
           / Everything you want hidden at 940px or less, place within here
           .nav-collapse.collapse
-            
+            %ul.nav
+              %li=link_to "Sign Up", about_path
+              %li=link_to "FAQ", about_path
+              %li=link_to "Login", about_path
             / .nav, .navbar-search, .navbar-form, etc
 
 

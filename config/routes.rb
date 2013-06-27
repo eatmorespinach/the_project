@@ -2,12 +2,16 @@ TheProject::Application.routes.draw do
   
   resources :users
 
-  get "content/about"
-
   root :to => "landing#index"
+
+  get "content/about"
 
   get "landing/index"
 
+  get "about" => "content#about"
+
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
