@@ -1,71 +1,28 @@
-%html
-  %head
-    %link{:href => "css/reset.css", :rel => "stylesheet"}/
-    %link{:href => "css/index.css", :rel => "stylesheet"}/
-    %script{:src => "https://static.vline.com/vline.js"}
-    %title collab bnb
-  %body
-    .navbar.navbar-inverse
-      .navbar-inner
-        .container
-          / .btn-navbar is used as the toggle for collapsed navbar content
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          / Be sure to leave the brand out there if you want it shown
-          %a.brand{:href => "#"} Bitmaker Project
-          
-          / Everything you want hidden at 940px or less, place within here
-          .nav-collapse.collapse
-            %ul.nav
-              %li=link_to "Sign Up", about_path
-              %li=link_to "FAQ", about_path
-              %li=link_to "Login", about_path
-            / .nav, .navbar-search, .navbar-form, etc
-
-
-
-
-    / #header
-    /   #inner-header
-    /     #top-left-logo 
-    /       %h3 Bitmaker Project
-    /     .nav-a
-    /       %ul
-    /         %li
-    /           %a{:href => "http://google.com"} login
-    /         %li
-    /           = link_to 'about', {:controller=> 'content', :action=> 'about'}
-  
-    / main landing page body
-    #container
-      #hero
-        / %h1#tagline Volunteer. <br><br> And in return, complimentary food <br>and lodging from your host.
-        / %button.btn-large Sign Up
-        %img#heropic{:alt => "hero image", :src => "http://latimesphoto.files.wordpress.com/2011/11/la-me-wwoofing08.jpg"}/
-      #content
-        .taglines.row
-          .span3 
-            %h3 travel for free
-            %p This is where I put text. boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.
-          .span3
-            %h3 lend a helping hand. 
-            %p Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot, bicycle, automobile, train, boat, airplane, or other means, with or without luggage, and can be one way or round trip. 
-          .span3
-            %h3 be a local
-            %p Boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.
-
-     
-      %br/
-      %br/
-      / practice input text form
-      %form
-        Email
-        %input{:name => "email", :type => "text", :value => "type your shit here"}/
-        Password
-        %input{:name => "password", :type => "text", :value => "type your shit here"}/
-      %button#form-enter Enter
-      #output
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
-    %script{:src => "javascripts/index.js"}
+#container
+  #hero
+    / %h1#tagline Volunteer. <br><br> And in return, complimentary food <br>and lodging from your host.
+    / %button.btn-large Sign Up
+    %img#heropic{:alt => "hero image", :src => "http://latimesphoto.files.wordpress.com/2011/11/la-me-wwoofing08.jpg"}/
+  #content
+    .taglines.row
+      .span3 
+        %h3 travel for free
+        %p This is where I put text. boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.
+      .span3
+        %h3 lend a helping hand. 
+        %p Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot, bicycle, automobile, train, boat, airplane, or other means, with or without luggage, and can be one way or round trip. 
+      .span3
+        %h3 be a local
+        %p Boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.
+  %br/
+  %br/
+  / practice input text form
+  %form
+    Email
+    %input{:name => "email", :type => "text", :value => "type your shit here"}/
+    Password
+    %input{:name => "password", :type => "text", :value => "type your shit here"}/
+  %button#form-enter Enter
+  #output
+%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
+%script{:src => "javascripts/index.js"}

@@ -17,10 +17,20 @@
 
 $default_text: #333333;
 
+.navbar-inner {
+	background: green;
+	filter: none; //for ie
+}
+
+.container {
+	width: 940px;
+	margin: 0px auto;	
+}
+
 #container {
 	background-color: white;
 	height: 1000px;
-	width: 960px;
+	width: 940px;
 	margin: 0px auto;	
 }
 

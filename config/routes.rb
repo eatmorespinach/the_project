@@ -1,14 +1,23 @@
 TheProject::Application.routes.draw do
   
-  resources :users
-
-  root :to => "landing#index"
-
-  get "content/about"
+  
 
   get "landing/index"
 
+  root :to => "landing#index"
+
   get "about" => "content#about"
+
+  get "content/about"
+
+  get "faq" => "content#faq"
+
+  get "content/faq"
+
+  resources :users
+  
+
+  
 
 
   
