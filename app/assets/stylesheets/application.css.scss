@@ -17,10 +17,7 @@
 
 $default_text: #333333;
 
-.navbar-inner {
-	background: green;
-	filter: none; //for ie
-}
+
 
 .container {
 	width: 940px;
@@ -28,13 +25,41 @@ $default_text: #333333;
 }
 
 #container {
-	background-color: white;
-	height: 1000px;
 	width: 940px;
 	margin: 0px auto;	
 }
 
+#bob {
+	border: none;
+	border-radius: none;
+}
+
+#sally {
+	text-align: right;
+}
 
 
-
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+  a {
+    color: #555;
+    &:hover { 
+      color: #222;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
 
