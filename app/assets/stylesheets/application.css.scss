@@ -16,7 +16,7 @@
 @import "bootstrap-responsive";
 
 $default_text: #333333;
-
+$site_width: 940px;
 
 
 .container {
@@ -42,7 +42,12 @@ $default_text: #333333;
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  margin-bottom: 45px;
   border-top: 1px solid #eaeaea;
+  #inner-footer {
+    width: $site_width;
+    margin: 0px auto;
+  }
   color: #999;
   a {
     color: #555;

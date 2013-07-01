@@ -4,9 +4,4 @@
 
 
 // image fadeTo on click to test js. 
-$(document).ready(function(){
-	$('#heropic').click(function(){
-		$(this).fadeTo('slow', 0.5);
-	})
-});
 

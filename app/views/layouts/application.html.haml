@@ -6,16 +6,8 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    =render "layouts/header"
-  = yield 
+    = render "layouts/header"
+    = yield 
+    = render "layouts/footer"
 
-  %footer.footer
-  %small
-    %a{:href => "http://railstutorial.org/"} Rails Tutorial
-    by Michael Hartl
-  %nav
-    %ul
-      %li= link_to "About",   '#'
-      %li= link_to "Contact", '#'
-      %li
-        %a{:href => "http://news.railstutorial.org/"} News
+  

@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+
+
+	$('#heropic').click(function(){
+		$(this).fadeTo('slow', 0.5);
+	});
+
+
+
+
+	function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+	}
+	function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+	}
+
+});

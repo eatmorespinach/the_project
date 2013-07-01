@@ -8,13 +8,13 @@ TheProject::Application.routes.draw do
 
   get "about" => "content#about"
 
-  get "content/about"
-
   get "faq" => "content#faq"
 
-  get "content/faq"
+  get "contact" => "content#contact"
 
   resources :users
+
+
   
 
   
