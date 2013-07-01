@@ -1,6 +1,6 @@
 TheProject::Application.routes.draw do
   
-  
+  get "login" => "users#login"
 
   get "landing/index"
 
