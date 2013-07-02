@@ -31,7 +31,13 @@ $site_width: 940px;
 
 #bob {
 	border: none;
-	border-radius: none;
+	
+}
+
+.navbar-inner {
+  background-image: none;
+  background-color: white;
+  border-radius: none;
 }
 
 #sally {
