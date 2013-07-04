@@ -8,3 +8,7 @@ I have installed rspec for tdd.
 
 If I have time, consider this using postgreSQL 
 https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
+
+when i installed sorcery, I used: 
+rails generate sorcery:install remember_me reset_password

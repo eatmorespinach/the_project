@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	user = login(params[:email], params[:password], params[:remember], parama[:reset_password])
+  	user = login(params[:email], params[:password], params[:remember], params[:reset_password])
   	if user
   		redirect_back_or_to root_url, :notice => "Logged in!"
   	else 
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 
   def destroy
     logout  	 
-    redirect_to "root_url", :notice => "Logged Out!"
+    redirect_to root_url, :notice => "Logged Out!"
   end
 
   
