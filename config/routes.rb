@@ -6,8 +6,6 @@ TheProject::Application.routes.draw do
 
   get "landing/index"
 
-  root :to => "landing#index"
-
   get "about" => "content#about"
 
   get "faq" => "content#faq"
@@ -18,6 +16,7 @@ TheProject::Application.routes.draw do
 
   resources :sessions
   
+  root :to => "landing#index"
 
   
 
