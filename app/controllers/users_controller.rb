@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = User.new(params[:user]) #where does this line's :user link to?
+  	@user = User.new(params[:user])
   	if @user.save
   		redirect_to www.google.com
   	else
@@ -13,4 +13,6 @@ class UsersController < ApplicationController
 
   end
 
+  def show
+  end
 end
