@@ -1,5 +1,7 @@
 TheProject::Application.routes.draw do
   
+
+
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -15,6 +17,8 @@ TheProject::Application.routes.draw do
   resources :users
 
   resources :sessions
+
+  resources :listings
   
   root :to => "landing#index"
 
