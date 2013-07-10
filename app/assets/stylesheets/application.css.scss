@@ -29,9 +29,9 @@ $site_width: 940px;
 	margin: 0px auto;	
 }
 
-#bob {
-	border: none;
-	
+#body {
+  max-width: 940px;
+  margin:0px auto;
 }
 
 .navbar-inner {
@@ -40,10 +40,9 @@ $site_width: 940px;
   border-radius: none;
 }
 
-//#sally {
-//	text-align: right;
-//}
-
+.nav-collapse {
+  float: right
+}
 
 footer {
   margin-top: 45px;
