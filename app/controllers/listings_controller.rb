@@ -1,4 +1,6 @@
 class ListingsController < ApplicationController
+  before_filter :ensure_logged_in
+
   def index
     @listings = Listing.all
   end
