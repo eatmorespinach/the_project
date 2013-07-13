@@ -7,6 +7,10 @@ class ListingsController < ApplicationController
 
   def show
     @listing = Listing.find(params[:id])
+    # @reviews = Review.find_by_listing_id(params[:id])
+    if current_user
+      @review = @listing.reviews.build
+    end
   end
 
   def new

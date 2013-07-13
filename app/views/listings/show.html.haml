@@ -1,4 +1,18 @@
-%h3= @listing.name
+%h2= @listing.name
 
-%h4= @listing.description
-%p= @listing.guests
+%p= @listing.description
+
+
+%p Guests: #{@listing.guests}
+
+
+
+
+%h4 Reviews
+
+
+- @listing.reviews.each do |review|
+  %p= review.description
+  %br
+  
+/   - if review.user != nil 

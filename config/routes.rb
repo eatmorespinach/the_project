@@ -1,7 +1,5 @@
 TheProject::Application.routes.draw do
   
-
-
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -14,12 +12,13 @@ TheProject::Application.routes.draw do
 
   get "contact" => "content#contact"
 
-  resources :users
+  resources :users, :only => [:new, :create]
 
   resources :sessions
 
-  resources :listings
-  
+  resources :listings do
+    resources :reviews
+  end
   root :to => "landing#index"
 
 
