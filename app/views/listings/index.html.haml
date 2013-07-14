@@ -1,8 +1,8 @@
-%h1 Home: All Listings
-
-
+%h1 Host Listings
+%br
 
 - @listings.each do |listing|
 
-  %h4= listing.name
-  %h4= listing.description
+  %h4= link_to listing.name, listing_path(listing[:id])
+  %p= listing.description
+

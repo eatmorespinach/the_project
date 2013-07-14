@@ -3,11 +3,13 @@ class ListingsController < ApplicationController
 
   def index
     @listings = Listing.all
+    @id = params[:id]
   end
 
   def show
     @listing = Listing.find(params[:id])
     # @reviews = Review.find_by_listing_id(params[:id])
+
     if current_user
       @review = @listing.reviews.build
     end
